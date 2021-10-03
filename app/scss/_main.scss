@@ -1,0 +1,120 @@
+.main{
+    // border: 1px purple solid;
+
+    margin-top: 4rem;
+    margin-left: 5rem;
+    padding-bottom: 5rem;
+
+    &__cards{
+        
+        // border: 1px red solid;
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat(3, auto);
+        justify-content: left;
+
+        width: 44rem;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        
+
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 221px;
+            height: 180px;
+            border-radius: 8px;
+            background-color: transparent;
+
+            margin-right: 1rem;
+            
+        }
+        &-images{
+            width: 221px;
+            height: 148px;
+            border: 1px $lightgray1 solid;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom: none;
+        }
+        &-buttons{
+            width: 221px;
+            height: 32px;
+            border: 1px solid $lightgray1;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            background-color: transparent;
+            color: white;
+            font-family: 'Merriweather Sans', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            cursor: pointer;
+
+            &:hover{
+                background: $lightgray1;
+                transition: ease-in-out 200ms;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                color: white;
+            }
+
+            &:active{
+                background: #b4b4b4;
+                transition: none;
+            }
+        }
+
+        }
+
+        &__services{
+
+            // border: 1px blue solid;
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            bottom: 24.7rem;
+            left: 55rem;
+            width: 16rem;
+            height: 24.56rem;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px lightgray solid;
+            border-radius: 16px;
+
+            &-title{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                color: white;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                text-decoration: underline;
+            }
+
+            &-item{
+                margin-bottom: 1rem;
+                width: 14rem;
+                height: 2rem;
+                border: 1px solid lightgray;
+                border-radius: 8px;
+                background-color: transparent;
+
+                font-family: 'Merriweather Sans', sans-serif;
+                font-weight: 200;
+                color: white;
+
+                &:hover{
+                    background-color: $lightgray1;
+                    transition: ease-in-out 200ms;
+                    cursor: pointer;
+                }
+                
+                &:active{
+                    background: #b4b4b4;
+                    transition: none;
+                }
+            }
+        }
+}

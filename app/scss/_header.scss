@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    background: transparent;
+
+    &__logo{
+        
+        width: 40%;
+        margin-left: 10rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__elements{
+
+        margin-top: 4rem;
+        font-family: 'Montserrat', sans-serif;
+        
+        &-items{
+            display: inline;
+            margin-left: 1rem;
+            padding: 10px 10px;
+            border: 1px transparent solid;
+
+            
+            font-weight: 300;
+            font-size: 18px;
+            
+
+            border-radius: 8px;
+            
+            &:hover{
+                border: 1px solid $lightgray1
+            }
+
+            &:active{
+                background: #d4d4d4;
+            }
+            
+        }
+    }
+}

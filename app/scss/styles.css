@@ -1,0 +1,209 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.15))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+hr {
+  width: 50rem;
+  position: relative;
+  top: 1rem;
+  left: 27rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+}
+
+.header__logo {
+  width: 40%;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header__elements {
+  margin-top: 4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header__elements-items {
+  display: inline;
+  margin-left: 1rem;
+  padding: 10px 10px;
+  border: 1px transparent solid;
+  font-weight: 300;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.header__elements-items:hover {
+  border: 1px solid #e3e3e3;
+}
+
+.header__elements-items:active {
+  background: #d4d4d4;
+}
+
+.main {
+  margin-top: 4rem;
+  margin-left: 5rem;
+  padding-bottom: 5rem;
+}
+
+.main__cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1px;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 44rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+.main__cards-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 221px;
+  height: 180px;
+  border-radius: 8px;
+  background-color: transparent;
+  margin-right: 1rem;
+}
+
+.main__cards-images {
+  width: 221px;
+  height: 148px;
+  border: 1px #e3e3e3 solid;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: none;
+}
+
+.main__cards-buttons {
+  width: 221px;
+  height: 32px;
+  border: 1px solid #e3e3e3;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: transparent;
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.main__cards-buttons:hover {
+  background: #e3e3e3;
+  -webkit-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: white;
+}
+
+.main__cards-buttons:active {
+  background: #b4b4b4;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.main__services {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 24.7rem;
+  left: 55rem;
+  width: 16rem;
+  height: 24.56rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px lightgray solid;
+  border-radius: 16px;
+}
+
+.main__services-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.main__services-item {
+  margin-bottom: 1rem;
+  width: 14rem;
+  height: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 200;
+  color: white;
+}
+
+.main__services-item:hover {
+  background-color: #e3e3e3;
+  -webkit-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+}
+
+.main__services-item:active {
+  background: #b4b4b4;
+  -webkit-transition: none;
+  transition: none;
+}
+/*# sourceMappingURL=styles.css.map */
